@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <li>>
+        <nav>
+            <ul><strong><a href="welcome.html" class="link_to_pages">Home</a></strong></ul>
+        </nav>
+    </li>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="User Name"></n>
+                <input type="password" placeholder="Create a Password">
+                <input type="password" placeholder="Confirm your Password">
+                <button type="button">Register</button>
+                <p class="message">Already Registered?       <a href="#"><strong>Login</strong></a></p>
+            </form>
+
+            <form class="login-form">
+                <input type="text" placeholder="User Name"></n>
+                <input type="password" placeholder="Password">
+                <button type="button">Login</button>
+                <p class="message">Not Registered?       <a href="#"><strong>Register</strong></a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $('.message a').click(function() {
+            $('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+        });
+    </script>
+</body>
+</html>

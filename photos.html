@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SahYog - Photos</title>
+    <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="welcome.html"><img src="Images/logo.jpg" alt="Welcome" class="logo"></a></li>
+        <li><a href="welcome.html" class="link_to_pages">Home</a></li>
+        <li><a href="about.html" class="link_to_pages">About</a></li>
+        <li><a href="events.html" class="link_to_pages">Events</a></li>
+        <li><a href="contact.html" class="link_to_pages">Contact Us</a></li>
+        <li><a href="signin.html" class="register">SignIn</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><img src="Images/welcome.jpg" alt=""></li>
+                <li><img src="Images/about.jpg" alt=""></li>
+                <li><img src="Images/events.jpg" alt=""></li>
+                <li><img src="Images/moon.png" alt=""></li>
+                <li><img src="Images/Photos-Page/photos1.jfif" alt=""></li>
+                <li><img src="Images/Photos-Page/photos2.jpg" alt=""></li>
+                <li><img src="Images/Photos-Page/photos3.jpg" alt=""></li>
+                <li><img src="Images/Photos-Page/photos4.jpg" alt=""></li>
+                <li><img src="Images/Photos-Page/photos5.jfif" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jquery.flipster.min.js"></script>
+
+<script>$('.carousel').flipster(
+    {
+        style:'carousel', 
+        spacing: -0.3,
+    }
+);</script>
+
+</body>
+</html>

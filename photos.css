@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mohave';
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+.hero .carousel {
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  li{
+    display: inline-block;
+    margin: auto;
+  }
+  .link_to_pages {
+    margin: 0px;
+    background-color: transparent;
+    color: rgb(54, 90, 1);
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    border-radius: 15px;
+  }
+  
+  .link_to_pages:hover {
+    background-color: red;
+    color: white;
+    border: white;
+  }
+  .register {
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+  }
+  .register:hover {
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+  }
+  .carousel img {
+      -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+  }
