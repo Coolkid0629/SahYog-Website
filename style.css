@@ -1,101 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 body {
-  background-color: white;
-  font-family: Mohave;
-  padding: 0px;
-  color: red;
+	background-color: white;
+	font-family: Poppins;
+	font-weight: 500px;
+	padding: 0px;
+	color: red;
 }
 
 body h1 {
-    text-align: center;
+	text-align: center;
+}
+
+.about-text {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.welcome-text {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.events-text {
+	text-align: center;
 }
 
 .link_to_pages {
-  margin: 0px;
-  background-color: transparent;
-  color: rgb(54, 90, 1);
-  padding: 10px 25px;
-  text-decoration: none;
-  display: inline-block;
-  margin: auto;
-  border-radius: 15px;
+	margin: 0px;
+	background-color: transparent;
+	color: rgb(54, 90, 1);
+	padding: 10px 25px;
+	text-decoration: none;
+	display: inline-block;
+	margin: auto;
+	border-radius: 15px;
 }
 
 .link_to_pages:hover {
-  background-color: red;
-  color: white;
-  border: white;
+	background-color: red;
+	color: white;
+	border: white;
 }
 
 .register {
-  border: 2px solid;
-  border-radius: 15px;
-  background-color: rgb(255, 0, 0);
-  color: white;
-  padding: 10px 25px;
-  text-decoration: none;
+	border: 2px solid;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+	padding: 10px 25px;
+	text-decoration: none;
 }
 .register:hover {
-  border: 2px solid;
-  border-radius: 15px;
-  background-color: white;
-  color: black;
-  padding: 10px 25px;
-  text-decoration: none;
-  border-color: red;
+	border: 2px solid;
+	border-radius: 15px;
+	background-color: white;
+	color: black;
+	padding: 10px 25px;
+	text-decoration: none;
+	border-color: black;
 }
 
 .logo {
-  width: 175px;
-  height: 100px;
-  border-radius: 10%;
+	width: 175px;
+	height: 100px;
+	border-radius: 10%;
 }
 
 .logo:hover {
-  width: 175px;
-  height: 100px;
-  border-radius: 10%;
+	width: 175px;
+	height: 100px;
+	border-radius: 10%;
 }
 
-
-
-ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  flex-direction: row;
-  display: flex;
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex-direction: row;
+	display: flex;
 }
 
-li{
-  display: inline-block;
-  margin: auto;
-}
-.main-img {
-  width: 100%;
-  height: 100%;
+li {
+	display: inline-block;
+	margin: auto;
 }
 
-.small-img{
-  margin: 0;
-  padding: 100px;
-  list-style-type: none;
-  flex-direction: row;
-  display: flex;
+.preloader {
+	background: #000 url(images/preloader.gif) no-repeat center;
+  background-size: 15%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
 }
-
-
-
-.small-img li {
-  display: inline-block;
-  margin: auto;
-}
-
-.small-img img {
-  width: 75%;
-  height: 75%;
+body {
+	background-color: #000;
 }

@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
     <link rel="stylesheet" href="signin.css">
 </head>
 <body>
-    <li>>
-        <nav>
-            <ul><strong><a href="welcome.html" class="link_to_pages">Home</a></strong></ul>
-        </nav>
-    </li>
-    <div class="login-page">
-        <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="User Name"></n>
-                <input type="password" placeholder="Create a Password">
-                <input type="password" placeholder="Confirm your Password">
-                <button type="button">Register</button>
-                <p class="message">Already Registered?       <a href="#"><strong>Login</strong></a></p>
-            </form>
-
-            <form class="login-form">
-                <input type="text" placeholder="User Name"></n>
-                <input type="password" placeholder="Password">
-                <button type="button">Login</button>
-                <p class="message">Not Registered?       <a href="#"><strong>Register</strong></a></p>
-            </form>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box">
+                <div class="card-front"></div>
+                <h2>LOGIN</h2>
+                <form>
+                    <input type="email" class="input-box" placeholder="Your Email Id" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span></span>
+                </form>
+                <div class="card-back"></div>
+            </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <script>
-        $('.message a').click(function() {
-            $('form').animate({height:"toggle",opacity:"toggle"}, "slow");
-        });
-    </script>
 </body>
 </html>
