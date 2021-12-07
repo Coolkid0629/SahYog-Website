@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    charset="utf-8"
+  />
+  <head>
     <title>SahYog - Photos</title>
-    <link rel="stylesheet" href="photos.css">
-    <link rel="stylesheet" href="jquery.flipster.min.css">
-</head>
-<body>
-    <nav>
-        <ul>
-        <li><a href="welcome.html"><img src="Images/logo.jpg" alt="Welcome" class="logo"></a></li>
-        <li><a href="welcome.html" class="link_to_pages">Home</a></li>
-        <li><a href="about.html" class="link_to_pages">About</a></li>
-        <li><a href="events.html" class="link_to_pages">Events</a></li>
-        <li><a href="contact.html" class="link_to_pages">Contact Us</a></li>
-        <li><a href="signin.html" class="register">SignIn</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
-        <div class="carousel">
-            <ul>
-                <li><img src="Images/welcome.jpg" alt=""></li>
-                <li><img src="Images/about.jpg" alt=""></li>
-                <li><img src="Images/events.jpg" alt=""></li>
-                <li><img src="Images/moon.png" alt=""></li>
-                <li><img src="Images/Photos-Page/photos1.jfif" alt=""></li>
-                <li><img src="Images/Photos-Page/photos2.jpg" alt=""></li>
-                <li><img src="Images/Photos-Page/photos3.jpg" alt=""></li>
-                <li><img src="Images/Photos-Page/photos4.jpg" alt=""></li>
-                <li><img src="Images/Photos-Page/photos5.jfif" alt=""></li>
+    <link rel="stylesheet" href="photos.css" />
+    <link rel="stylesheet" href="jquery.flipster.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="websiteLoaded()">
+    <!-- Loading Animation -->
+    <div class="middle">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+    <div class="main">
+      <div class="whole">
+        <header >
+          <h2 class="logo"><a href="index.html">SahYog Website</a></h2>
+          <nav>
+            <ul class="nav_links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
+          </nav>
+          <a href="signin.html" class="cta"><button>Sign In</button></a>
+        </header>
+      </div>
+      <div class="hero">
+        <div class="carousel">
+          <ul>
+            <li><img src="Images/welcome.jpg" alt="" /></li>
+            <li><img src="Images/about.jpg" alt="" /></li>
+            <li><img src="Images/events.jpg" alt="" /></li>
+            <li><img src="Images/moon.png" alt="" /></li>
+            <li><img src="Images/Photos-Page/photos1.jfif" alt="" /></li>
+            <li><img src="Images/Photos-Page/photos2.jpg" alt="" /></li>
+            <li><img src="Images/Photos-Page/photos3.jpg" alt="" /></li>
+            <li><img src="Images/Photos-Page/photos4.jpg" alt="" /></li>
+            <li><img src="Images/Photos-Page/photos5.jfif" alt="" /></li>
+          </ul>
         </div>
+      </div>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="jquery.flipster.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.flipster.min.js" ></script>
 
-<script>$('.carousel').flipster(
-    {
-        style:'carousel', 
+    <script>
+      $(".carousel").flipster({
+        style: "carousel",
         spacing: -0.3,
-    }
-);</script>
+      });
+    </script>
 
-</body>
+    <script src="welcome.js" />
+  </body>
 </html>
