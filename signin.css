@@ -1,40 +1,117 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    color: #fff;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    font-family: sans-serif;
-    background: rgb(187,187,245);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card {
-    width: 350px;
-    height: 500px;
-    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
-}
-.inner-box {
-    position: relative;
-    width: 100%;
+.hero {
     height: 100%;
-}
-.card-front, .card-back{
-    position: absolute;
     width: 100%;
-    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(Images/singinBackground.jpg);
     background-position: center;
     background-size: cover;
-    padding: 55px;
-    box-sizing: border-box;
-    backface-visibility: hidden;
-    background-color: rgb(78, 72, 160);
+    position: absolute;
 }
-.card-back {
-    transform: rotateY(180deg);
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    padding: 5px;
+    overflow: hidden;
 }
-
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgb(77, 76, 76);
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #0088a9, #00ccff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.submit-btn {
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto 80px;
+    background: linear-gradient(to left, #0088a9, #00ccff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.chech-box {
+    margin: 30px 10px 30px 0;
+}
+span {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    bottom: 68px;
+    position: absolute;
+    margin: -4px 0;
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+.register-checkbox {
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    border-width: 5px;
+    margin: 50%;
+}
+header {
+    background-color: black;
+}
